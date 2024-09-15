@@ -1,0 +1,47 @@
+.toggle-btn {
+  margin: 10px;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #1E1E1F;
+  color: #DFE0E0;
+  font-size: 16px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  overflow-x: hidden;
+  transition: all 0.3s ease;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid #2C2D2E;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar-icon {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 8px;
+  left: 258px;
+  transition: all 0.3s ease;
+  margin: 0;
+  cursor: pointer;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar-icon.shifted {
+  left: 8px;
+}
+
+.sidebar.open {
+  left: -250px;
+}
+
+/*# sourceMappingURL=sidebar.css.map */

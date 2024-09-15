@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Текстовый редактор с заметками</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+<div class="sidebar">
+    <p>Заметки</p>
+    <ul id="notesList"></ul>
+</div>
+<img src="sidebar-flip-svgrepo-com.svg" alt="" class="sidebar-icon toggle-btn">
+
+<div class="container">
+    <textarea id="noteArea" placeholder="Напишите вашу заметку здесь..."></textarea>
+    <div class="buttons">
+        <button id="saveBtn">Сохранить</button>
+        <button id="updateBtn" style="display: none;">Обновить</button>
+        <button id="clearBtn">Очистить</button>
+    </div>
+    <p id="statusMessage"></p>
+</div>
+
+<script src="sidebar.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
